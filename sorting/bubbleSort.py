@@ -1,4 +1,4 @@
-dataSet = [1,2,4,6,9]
+dataSet = [1,2,3,4,5,6,10,7,8]
 for i in range(len(dataSet)-1):
     flag = 0
     for j in range(len(dataSet)-1-i):
