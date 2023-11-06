@@ -1,4 +1,4 @@
-dataSet = [7,6,10,5,9,2,1,15,7]
+dataSet = [7, 6, 10, 5, 9, 2, 1, 15, 7]
 
 
 def position(dataSet, lb, ub):
@@ -26,3 +26,5 @@ def quickSort(dataSet, lb, ub):
         quickSort(dataSet, lb, loc - 1)
         quickSort(dataSet, loc + 1, ub)
     print(dataSet)
+
+quickSort(dataSet,7,7)
