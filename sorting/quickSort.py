@@ -4,7 +4,8 @@ def quick_sort(arr):
         return arr
     else:
         pivot = arr[0]
-        less = [], greater = []
+        less = []
+        greater = []
         for x in arr[1:]:
             if x <= pivot:
                 less.append(x)
