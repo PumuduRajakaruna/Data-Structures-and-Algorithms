@@ -1,0 +1,42 @@
+HOW can we resolve the problem of collison?
+   1. Chaining
+   2. Open addressing 
+
+
+HOW to negate cache inefficiency in chaining in hashmaps ? 
+ 
+Cache inefficiency in hash maps with chaining (linked lists) can occur due to the non-contiguous memory locations of linked nodes. This issue arises when the linked list nodes are scattered across different locations in memory, leading to poor cache locality.
+
+SOLUTIONS
+1. Open Addressing 
+   Open addressing is a collision resolution technique used in hash tables. When a collision occurs (i.e., when two keys hash to the same index), open addressing seeks to find an alternative location (an "open" slot) within the hash table to place the colliding key. Unlike chaining, where each slot in the table can hold multiple items (usually in a linked list), open addressing aims to keep all keys directly within the array.
+
+There are several open addressing strategies, 
+   i.Linear Probing:
+
+          When a collision occurs at index i, linear probing checks the    next slot (i+1). If that slot is occupied, it checks the next one (i+2), and so on, until an empty slot is found.
+  
+  ii. Quadric Probing:
+         next possition i + 1^2 , i + 2^2 so on. 
+
+2. Use Dynamic Arrays or Resizable Arrays
+                                   If your language supports dynamic arrays or resizable arrays (like Python's list), consider using them instead of linked lists.
+
+
+
+WHAT is Load Factor ?
+    The load factor is a crucial parameter in hash tables that determines how full the table is allowed to get before it is resized. It is usually denoted by the symbol 
+    λ (lambda) and is calculated as,
+                                                            λ = Number of elements in the hash table / Size of the hash table
+​    
+    With a good hash function, the average lookup cost is nearly constant  
+    for Load Factor = 0.0 ~ 0.7
+ 
+
+
+WHAT happen if m is power of 2, if hash function is h(k) = k mod m ,  (hash k into a table with m slots) ?
+    Bitwise Operation: k mod m = k & (m-1) bitwise AND
+    This calculation is computationally efficient on most hardware, making the hash function fast in terms of computation. 
+
+    
+
