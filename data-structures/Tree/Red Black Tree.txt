@@ -1,0 +1,28 @@
+Red Black Tree
+
+1. Root = Black
+2. No two adjecent red nodes
+3. Count no of black nodes in each path
+
+
+Insertion in Red Black Tree
+
+1.If root is empty create new node as root node with color black
+2.If tree is not empty, create newnode as leaf node woth color red
+3.If parent of newnode is black then exit
+4.If parent of new node is red, then check the color of parent's sibilings of newnode
+  a. if color is black or null, then do suitable rotation and recolor
+  b. if color is red, then recolor and also check if parent's parent of newnode is not root node then recolor it and recheck. 
+
+
+AVL trees and Red-Black trees are both self-balancing binary search trees, designed to maintain their balance during insertions and deletions to ensure efficient search, insertion, and deletion operations. However, there are some differences between AVL trees and Red-Black trees.
+
+1.  AVL trees are more strictly balanced compared to Red-Black trees.
+
+2.  AVL trees may require more rotations during insertion and deletion         operations to maintain their balance.
+
+3.  AVL trees may perform better in search operations due to their stricter balancing, but they can be less efficient in terms of insertion and deletion operations.
+     Red-Black trees, with their less rigid balancing criteria, may offer better performance in terms of insertion and deletion operations
+
+4.  AVL trees may use more memory to store balance information for each node (e.g., balance factors).
+Red-Black trees often require less memory overhead since they only need to store color information (red or black) for each node.
