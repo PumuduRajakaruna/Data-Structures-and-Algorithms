@@ -1,37 +1,28 @@
 Heap Vs Tree
 
-1.Structure:
-
-Heap: A complete binary tree, meaning every level except the last is completely filled, and the last level has nodes filled from left to right. It doesn't require any specific ordering of elements.
-
-Tree: Can be various types, including binary trees (not limited to complete), binary search trees (BSTs) where elements are ordered, n-ary trees with more than two children per node, etc.
-
-
-2. Purpose:
-
-Heap: Primarily used for efficient priority queues, where the element with the highest (or lowest) priority needs to be accessed quickly.
-Tree: Used for various purposes, including searching (BSTs), traversal (e.g., depth-first search, breadth-first search), and hierarchical relationships.
-
-
-Both heaps and trees are fundamental data structures, but they have some key differences:
-
 1. Structure:
 
 Heap: A complete binary tree, meaning every level except the last is completely filled, and the last level has nodes filled from left to right. It doesn't require any specific ordering of elements.
 Tree: Can be various types, including binary trees (not limited to complete), binary search trees (BSTs) where elements are ordered, n-ary trees with more than two children per node, etc.
+
+
 2. Purpose:
 
 Heap: Primarily used for efficient priority queues, where the element with the highest (or lowest) priority needs to be accessed quickly.
 Tree: Used for various purposes, including searching (BSTs), traversal (e.g., depth-first search, breadth-first search), and hierarchical relationships.
+
+
 3. Operations:
 
 Heap: Efficient for insert, delete min/max (priority element), and heapify (rearranging to maintain heap property). Other operations (like search) might be less efficient.
 Tree: Depending on the type, trees can be efficient for different operations. BSTs excel at searching due to their ordered nature, while other trees might be better suited for traversal or representing hierarchical data.
 
+
 4. Memory Usage:
 
 Heap: Uses less memory compared to some balanced trees (like AVL trees) because it doesn't require strict balancing conditions.
 Tree: Memory usage can vary depending on the type and balancing requirements.
+
 
 5. Applications:
 
