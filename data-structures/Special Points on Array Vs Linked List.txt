@@ -1,0 +1,10 @@
+Special Points on Array Vs Linked List
+
+Array
+1.Contiguous in memory
+2.very limit book keeping required, only need to know the start of the array and its size
+3. When inserting a new elements its is required to shifts the other elements and make a space to add the new one
+
+Linked List
+1.Need an additional space for the pointers
+2. when inserting a new element just need to create a new node and adjust the pointers accordingly. 
