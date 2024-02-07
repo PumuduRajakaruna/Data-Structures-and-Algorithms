@@ -22,7 +22,7 @@ class BinarySearchTreeNode:
 
 
     def bfs(self):
-        queue = [self]
+        queue = [self]  # add the root to the queue 
         elements = []
     
         if queue is None:
